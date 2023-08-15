@@ -13,7 +13,7 @@ import TemplateView from '@/components/TemplateView.vue'; // Usando el alias @ p
 
 export default {
   components: {
-    TemplateView
+    TemplateView,
   }
 }
 </script>
