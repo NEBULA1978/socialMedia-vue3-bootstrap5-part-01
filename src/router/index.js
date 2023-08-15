@@ -22,6 +22,12 @@ const routes = [
 		component: () =>
 			import('../views/PostsView.vue'),
 	},
+	{
+		path: '/directivas',
+		name: 'directivas',
+		component: () =>
+			import('../views/Directivas.vue'),
+	},
 ]
 
 const router = createRouter({

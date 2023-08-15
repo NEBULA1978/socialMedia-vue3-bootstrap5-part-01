@@ -12,6 +12,9 @@
       <router-link to="/posts" class="nav-link">
         <span class="material-icons-round"> featured_play_list </span>
       </router-link>
+      <router-link to="/directivas" class="nav-link">
+        <span class="material-icons-round"> featured_play_list </span>
+      </router-link>
     </div>
   </nav>
 </template>
