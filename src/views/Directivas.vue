@@ -1,38 +1,42 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ...</p>
-    <div class="text-center">
-      <TheButton class="btn btn-primary btn-lg">Click me</TheButton>
-    </div>
+  <div>
+    <h1>Directivas</h1>
+    <NavComp />
+    <VBindVShowIfElseIf />
+    <VBind />
+    <VForFrutas />
+    <!-- <VForVIf />
+    <ComputedFuncion />
+    <Computed />
+    <Contador /> -->
+    <!-- ...otros elementos del template... -->
   </div>
-  <ArrayColores/>
-  <Eventos1/>
-  <Eventos2/>
-  <RecorrerObjeto/>
 </template>
 
 <script>
-// Importa el componente TheButton desde su archivo correspondiente
-// import TheButton from '../components/TheButton.vue';
-import TheButton from '@/components/TheButton.vue'; // Usando el alias @ para src
-import ArrayColores from '@/components/ArrayColores.vue'; // Usando el alias @ para src
-import Eventos1 from '@/components/Eventos1.vue'; // Usando el alias @ para src
-import Eventos2 from '@/components/Eventos2.vue'; // Usando el alias @ para src
-import RecorrerObjeto from '@/components/RecorrerObjeto.vue'; // Usando el alias @ para src
+// Importando componentes faltantes
+import NavComp from '@/components/NavComp.vue';
+import VBindVShowIfElseIf from '@/components/V-bind-V-show-If-ElseIf.vue';
+import VBind from '@/components/Vbind.vue';
+import VForFrutas from '@/components/V-for-Frutas.vue';
 
+// Me añade un navbar mas
+// import VForVIf from '@/components/V-for-V-If.vue';
+// import ComputedFuncion from '@/components/ComputedFuncion.vue';
+// import Computed from '@/components/Computed.vue';
+// import Contador from '@/components/Contador.vue';
 
 export default {
   components: {
-    TheButton,
-    ArrayColores,
-    Eventos1,
-    Eventos2,
-    RecorrerObjeto
-  }
+    NavComp,
+    VBindVShowIfElseIf,
+    VBind,
+    VForFrutas,
+    // VForVIf,
+    // ComputedFuncion,
+    // Computed,
+    // Contador
+  },
+  // ...otras propiedades y métodos...
 }
 </script>
-
-<style>
-/* Estilos para el componente AboutView si es necesario */
-</style>
