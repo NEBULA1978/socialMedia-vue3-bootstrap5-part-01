@@ -6,15 +6,20 @@
       <TheButton class="btn btn-primary btn-lg">Click me</TheButton>
     </div>
   </div>
+  <ArrayColores/>
 </template>
 
 <script>
 // Importa el componente TheButton desde su archivo correspondiente
-import TheButton from './TheButton.vue';
+// import TheButton from '../components/TheButton.vue';
+import TheButton from '@/components/TheButton.vue'; // Usando el alias @ para src
+import ArrayColores from '@/components/ArrayColores.vue'; // Usando el alias @ para src
+
 
 export default {
   components: {
-    TheButton
+    TheButton,
+    ArrayColores
   }
 }
 </script>
