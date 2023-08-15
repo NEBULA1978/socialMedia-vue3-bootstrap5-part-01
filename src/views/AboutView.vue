@@ -7,6 +7,9 @@
     </div>
   </div>
   <ArrayColores/>
+  <Eventos1/>
+  <Eventos2/>
+  <RecorrerObjeto/>
 </template>
 
 <script>
@@ -14,12 +17,18 @@
 // import TheButton from '../components/TheButton.vue';
 import TheButton from '@/components/TheButton.vue'; // Usando el alias @ para src
 import ArrayColores from '@/components/ArrayColores.vue'; // Usando el alias @ para src
+import Eventos1 from '@/components/Eventos1.vue'; // Usando el alias @ para src
+import Eventos2 from '@/components/Eventos2.vue'; // Usando el alias @ para src
+import RecorrerObjeto from '@/components/RecorrerObjeto.vue'; // Usando el alias @ para src
 
 
 export default {
   components: {
     TheButton,
-    ArrayColores
+    ArrayColores,
+    Eventos1,
+    Eventos2,
+    RecorrerObjeto
   }
 }
 </script>
