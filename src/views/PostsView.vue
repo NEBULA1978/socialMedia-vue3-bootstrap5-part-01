@@ -7,13 +7,19 @@
     </div>
   </div>
   <TemplateView/>
+  <ArrayObjetosId/>
+  <ArrayObjetos/>
 </template>
 <script>
 import TemplateView from '@/components/TemplateView.vue'; // Usando el alias @ para src
+import ArrayObjetosId from '@/components/ArrayObjetosId.vue'; // Usando el alias @ para src
+import ArrayObjetos from '@/components/ArrayObjetos.vue'; // Usando el alias @ para src
 
 export default {
   components: {
     TemplateView,
+    ArrayObjetosId,
+    ArrayObjetos
   }
 }
 </script>
