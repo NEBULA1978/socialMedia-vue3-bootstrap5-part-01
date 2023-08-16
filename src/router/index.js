@@ -28,6 +28,12 @@ const routes = [
 		component: () =>
 			import('../views/Directivas.vue'),
 	},
+	{
+		path: '/bash',
+		name: 'bash',
+		component: () =>
+			import('../views/Bash.vue'),
+	},
 ]
 
 const router = createRouter({

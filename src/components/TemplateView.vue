@@ -1,5 +1,5 @@
 <template>
-  <h1>Hola VUE3</h1>
+  <h1>{{ texto }}</h1>
 </template>
 
 <style>
@@ -10,8 +10,13 @@ h1 {
 
 <script>
 export default {
+  data() {
+    return {
+      texto: 'Hola VUE3 dinámico'
+    };
+  },
   components: {
-    // No es necesario definir TemplateView aquí
+    // No es necesario definir componentes aquí
   }
 }
 </script>

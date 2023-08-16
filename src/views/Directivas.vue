@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Directivas</h1>
-    <NavComp />
+   
     <VBindVShowIfElseIf />
     <VBind />
     <VForFrutas />
@@ -15,7 +15,7 @@
 
 <script>
 // Importando componentes faltantes
-import NavComp from '@/components/NavComp.vue';
+
 import VBindVShowIfElseIf from '@/components/V-bind-V-show-If-ElseIf.vue';
 import VBind from '@/components/Vbind.vue';
 import VForFrutas from '@/components/V-for-Frutas.vue';
@@ -28,7 +28,7 @@ import VForFrutas from '@/components/V-for-Frutas.vue';
 
 export default {
   components: {
-    NavComp,
+  
     VBindVShowIfElseIf,
     VBind,
     VForFrutas,

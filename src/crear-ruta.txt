@@ -1,0 +1,106 @@
+voy a archivo en router index.js
+
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+const routes = [
+	{
+		path: '/',
+		name: 'home',
+		component: HomeView,
+	},
+	{
+		path: '/about',
+		name: 'about',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () =>
+			import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+	},
+	{
+		path: '/posts',
+		name: 'posts',
+		component: () =>
+			import('../views/PostsView.vue'),
+	},
+	{
+		path: '/directivas',
+		name: 'directivas',
+		component: () =>
+			import('../views/Directivas.vue'),
+	},
+	{
+		path: '/bash',
+		name: 'bash',
+		component: () =>
+			import('../views/Bash.vue'),
+	},
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+export default router
+
+
+/////////////////////////
+Voy a NavComp.vue:
+
+<template>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container justify-content-evenly">
+      <router-link to="/" class="nav-link active" aria-current="page">
+        <span class="material-icons-round"> home </span>
+      </router-link>
+
+      <router-link to="/about" class="nav-link">
+        <span class="material-icons-round"> info </span>
+      </router-link>
+
+      <router-link to="/posts" class="nav-link">
+        <span class="material-icons-round"> featured_play_list </span>
+      </router-link>
+      <router-link to="/directivas" class="nav-link">
+        <span class="material-icons-round"> featured_play_list </span>
+      </router-link>
+
+      AÑADO
+      <router-link to="/Bash" class="nav-link">
+        <span class="material-icons-round"> featured_play_list </span>
+      </router-link>
+    </div>
+  </nav>
+</template>
+
+<script>
+  export default {
+    name: "NavComp"
+  }
+</script>
+
+<style scoped>
+.material-icons-round {
+  color: white;
+  font-size: 1.4em;
+  background-color: rgba(218, 218, 218, 0.158);
+  padding: 0.3em;
+  border-radius: 50%;
+  margin: 0.1em;
+}
+</style>
+
+/////////////////////////////////
+
+
+en carpeta views Bash.vue:
+
+<template>
+    <h1>Bash pasos crear ruta</h1>
+
+    
+</template>
+
+
